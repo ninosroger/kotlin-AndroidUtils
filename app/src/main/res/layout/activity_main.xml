@@ -12,4 +12,10 @@
         android:layout_height="wrap_content"
         android:text="AppBroadcastManager Demo" />
 
+    <Button
+        android:id="@+id/classification_demo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Classification Demo" />
+
 </LinearLayout>

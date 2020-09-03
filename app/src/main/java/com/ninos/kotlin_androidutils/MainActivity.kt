@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.ninos.kotlin_androidutils.broadcast.AppBroadcastManager
+import com.ninos.kotlin_androidutils.recycler_menu.ClassificationActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -20,6 +21,10 @@ class MainActivity : AppCompatActivity() {
         broadcast_demo.setOnClickListener {
             //发送Broadcast
             AppBroadcastManager.sendBroadcast(Intent(ACTION))
+        }
+
+        classification_demo.setOnClickListener {
+            startActivity(Intent(this, ClassificationActivity::class.java))
         }
     }
 }
