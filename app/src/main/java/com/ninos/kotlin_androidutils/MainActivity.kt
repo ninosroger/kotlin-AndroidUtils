@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.ninos.kotlin_androidutils.bottom_navigation.NavigationActivity
 import com.ninos.kotlin_androidutils.broadcast.AppBroadcastManager
 import com.ninos.kotlin_androidutils.recycler_menu.ClassificationActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -25,6 +26,9 @@ class MainActivity : AppCompatActivity() {
 
         classification_demo.setOnClickListener {
             startActivity(Intent(this, ClassificationActivity::class.java))
+        }
+        navigation_demo.setOnClickListener {
+            startActivity(Intent(this, NavigationActivity::class.java))
         }
     }
 }

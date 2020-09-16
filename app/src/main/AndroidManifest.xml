@@ -18,6 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".recycler_menu.ClassificationActivity" />
+        <activity android:name=".bottom_navigation.NavigationActivity" />
     </application>
 
 </manifest>
